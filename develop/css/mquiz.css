@@ -13,6 +13,11 @@ body {
     color: #8570a5;
   }
   
+  h1 {
+    display:grid;
+    text-align: center;
+  }
+
   button {
     display: inline-block;
     margin: 5px;
@@ -43,7 +48,10 @@ body {
     max-height: 400px;
     overflow: auto;
   }
-  
+  .list-group-item {
+  background-color: white;
+  }
+
   li {
     padding: 5px;
     list-style: decimal inside none;
