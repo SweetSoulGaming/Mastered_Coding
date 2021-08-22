@@ -20,6 +20,8 @@ var timerId;
 var sfxRight = new Audio("assets/sfx/correct.wav");
 var sfxWrong = new Audio("assets/sfx/incorrect.wav");
 
+
+//startBtn.onclick = startQuiz();
 function startQuiz() {
  // hide start screen
  var startScreenEl = document.getElementById("start-screen");
@@ -166,7 +168,7 @@ function saveHighscore() {
 startBtn.addEventListener("click", function () {
  // hide the start screen
     var startScreenEl = document.getElementById("start-screen");
-    startScreenEl.setAttribute("class", "hide");
+    startScreenEl.setAttribute("class","hide");
 
     // un-hide questions section
     questionsEl.removeAttribute("class");
@@ -184,6 +186,5 @@ startBtn.addEventListener("click", function () {
 
 })
 
-startBtn.onclick = startQuiz();
 
-submitBtn.onclick = saveHighscore;
+//submitBtn.onclick = saveHighscore;
