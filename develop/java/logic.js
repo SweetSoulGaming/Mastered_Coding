@@ -2,7 +2,7 @@
 
 // var to ref dom elements
 
-var questionEl = document.getElementById("questions");
+var questionsEl = document.getElementById("questions");
 var timerEl = document.getElementById("timer");
 var choicesEl = document.getElementById("choices");
 var submitBtn = document.getElementById("submit");
@@ -28,7 +28,8 @@ function startQuiz() {
  startScreenEl.setAttribute("class","hide");
 
  // un-hide questions section
-  questionsEl.removeAttribute("class");
+ 
+ questionsEl.removeAttribute("class");
 
  // start timer
  timerId= setInterval(clockTick, 1000);
@@ -88,7 +89,7 @@ function questionClick() {
         //penalize time
         time -= 15
 
-        if(time,0) {
+        if (time < 0) {
             time = 0;
         }
       // display new time
